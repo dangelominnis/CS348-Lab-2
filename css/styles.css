@@ -1,0 +1,339 @@
+/* Global Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-light-tan);
+    background-size: cover;
+    z-index: 4;
+    position: relative;
+}
+
+.body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.9); 
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+:root {
+    /* --color-black: #131321; */
+    --color-black: #000;
+    --color-white: #ffffff;
+    --color-grey: #acadb3;
+    --color-tan: #efe9e4;
+    --color-light-tan: #f7f2f1;
+}
+
+/* Header Section */
+#wrapper {
+    width: 100%;
+    margin: auto;
+    min-width: 960px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 150%;
+    padding: 10px 10px 10px 15px;
+    /* background-color: var(--color-black); */
+    border: 1px solid var(--color-grey);
+    box-shadow: 0 .75rem .75rem rgba(0, 0, 0, .05);
+    height: 40px;
+    border-radius: 50px;
+    margin-bottom: 2.5rem;
+}
+
+#header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .logo img {
+    height: 75%;
+}
+
+/* Navigation Section */
+#leftcolumn {
+    float: left;
+    width: 150px;
+    min-height: 708px;
+    /* background-color: var(--color-black); */
+    border-right: 1px solid var(--color-light-tan);
+    border-radius: 18px 0 0 18px;
+    padding: 10px 0px 10px 15px;
+}
+
+.nav-link {
+    margin-bottom: 1rem;
+}
+
+.nav-link:nth-child(4) {
+    margin-bottom: none;
+}
+
+.nav-link a {
+    color: var(--color-grey);
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 400;
+    /* font-family: 'Cinzel Decorative', cursive; */
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.nav-link a:hover {
+    color: var(--color-light-tan);
+    padding-bottom: .25rem;
+    border-bottom: 1.5px solid var(--color-light-tan);
+}
+
+/* Content Section */
+#rightcolumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 155px;
+    min-height: 708px;
+    /* border: 1.5px solid var(--color-black); */
+    border-radius: 0 18px 18px 0;
+    padding: 10px 0px 10px 10px;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1.5px solid var(--color-light-tan);
+    color: var(--color-light-tan);
+    padding: 3rem;
+    border-top-left-radius: 50rem;
+    border-top-right-radius: 50rem;
+    width: 13rem;
+    height: auto;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+/* 2nd Child Item Styling Start */
+.home-item:nth-child(2) {
+    margin: 0 6rem;
+    /* background-color: var(--color-light-tan);
+    color: var(--color-black);
+    transform: scale(1.1); */
+}
+
+/* .home-item:nth-child(2) .home-button {
+    border-bottom: 1.5px solid var(--color-black);
+}
+
+.home-item:nth-child(2) .home-button .btn-white-transparent {
+    border: 1.5px solid var(--color-black);
+    color: var(--color-black);
+}
+
+.home-item:nth-child(2) .home-button .btn-white-transparent:hover {
+    background-color: var(--color-black);
+    color: var(--color-light-tan);
+} */
+/* 2nd Child Item Styling End */
+
+.home-item:hover {
+    background-color: var(--color-light-tan);
+    color: var(--color-black);
+    transform: scale(1.1);
+}
+
+.home-item:hover .home-button {
+    border-bottom: 1.5px solid var(--color-black);
+}
+
+.home-item:hover .home-button .btn-white-transparent {
+    border: 1.5px solid var(--color-black);
+    color: var(--color-black);
+}
+
+.home-item:hover .home-button .btn-white-transparent:hover {
+    background-color: var(--color-black);
+    color: var(--color-light-tan);
+}
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50rem;
+    border: 1.5px solid var(--color-light-tan);
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+.home-image img {
+    width: 100px;
+    height: auto;
+}
+
+.home-item h3 {
+    /* color: var(--color-light-tan); */
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.home-item h4 {
+    /* color: var(--color-light-tan); */
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: -2rem;
+}
+
+.home-button {
+    margin: 2rem 0;
+    border-bottom: 1.5px solid var(--color-light-tan);
+    padding-bottom: 5rem;
+}
+
+/* Flowers Section */
+
+/* Perfumes Section */
+.perfumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfumes-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--color-light-tan);
+    padding: 2.5rem;
+    width: 11rem;
+    height: auto;
+    transition: .3s ease;
+    cursor: pointer;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    color: var(--color-light-tan);
+}
+
+/* .perfumes-item:nth-child(4) {
+    margin-right: 0;
+} */
+
+/* .perfumes-item:nth-child(6) {
+    margin-right: 0;
+} */
+
+.perfumes-item:hover {
+    background-color: var(--color-light-tan);
+    color: var(--color-black);
+    transform: scale(1.1);
+}
+
+.perfumes-item:hover h4 {
+    border-right: 1.5px solid var(--color-black);
+    border-left: 1.5px solid var(--color-black);
+}
+
+.perfumes-item img {
+    width: 100px;
+    height: auto;
+}
+
+.perfumes-item h3 {
+    /* color: var(--color-light-tan); */
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.perfumes-item p {
+    /* color: var(--color-light-tan); */
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+.perfumes-item h4 {
+    /* color: var(--color-light-tan); */
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-family: 'Cinzel Decorative', cursive;
+    border-right: 1.5px solid var(--color-light-tan);
+    border-left: 1.5px solid var(--color-light-tan);
+    padding: 0 2rem;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+}
+
+.about h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.about h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 2;
+    text-align: left;
+    margin-bottom: 3rem;
+    padding-right: 10rem;
+}
+
+.about img {
+    width: 40px;
+    height: auto;
+}

@@ -1,0 +1,77 @@
+/* Buttons */
+
+/* White Button */
+.btn-white {
+    background-color: var(--color-light-tan);
+    color: var(--color-black);
+    border: 1.5px solid var(--color-light-tan);
+    border-radius: 50px;
+    padding: .75rem 1.5rem;
+    font-size: .8rem;
+    font-weight: 400;
+    transition: .3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-white:hover {
+    background-color: transparent;
+    color: var(--color-light-tan);
+}
+
+/* White Transparent Button */
+.btn-white-transparent {
+    background-color: transparent;
+    color: var(--color-light-tan);
+    border: 1.5px solid var(--color-light-tan);
+    border-radius: 50px;
+    padding: .75rem 1.5rem;
+    font-size: .8rem;
+    font-weight: 400;
+    transition: .3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-white-transparent:hover {
+    background-color: var(--color-light-tan);
+    color: var(--color-black);
+}
+
+/* Black Button */
+.btn-black {
+    background-color: var(--color-black);
+    color: var(--color-light-tan);
+    border: 1.5px solid var(--color-black);
+    border-radius: 50px;
+    padding: .75rem 1.5rem;
+    font-size: .8rem;
+    font-weight: 400;
+    transition: .3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-black:hover {
+    background-color: transparent;
+    color: var(--color-black);
+}
+
+/* Black Transparent Button */
+.btn-black-transparent {
+    background-color: transparent;
+    color: var(--color-black);
+    border: 1.5px solid var(--color-black);
+    border-radius: 50px;
+    padding: .75rem 1.5rem;
+    font-size: .8rem;
+    font-weight: 400;
+    transition: .3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-black-transparent:hover {
+    background-color: var(--color-black);
+    color: var(--color-light-tan);
+}
